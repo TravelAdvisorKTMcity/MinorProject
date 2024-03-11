@@ -1,0 +1,234 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: red;
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+header .navbar a:hover {
+    color: red;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%); /* Adjust the percentage to reduce intensity */
+}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    position: fixed;
+    top: 60%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(1, 19, 4, 0.4);
+    border: 1px solid #000;
+    text-decoration-color: black;
+}
+
+.content a {
+    color: white;
+}
+
+.content a:hover {
+    color: red;
+}
+
+.content1 {
+    position: fixed;
+    top: 60%;
+    right:35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(1, 19, 4, 0.4);
+    border: 1px solid #000;
+    text-decoration-color: black;
+}
+
+.content1 a {
+    color: white;
+}
+
+.content1 a:hover {
+    color: red;
+}
+
+.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul 
+{
+    list-style: none;
+}
+.footer {
+    background-color: #24262b;
+    height: 36vh;
+    padding-top: 8vh;
+}
+
+.footer-col 
+{
+    padding: 0 90px;
+}
+.footer-col h4 
+{
+    font-size: 18px;
+    color: red;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) 
+{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a 
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover 
+{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a 
+{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.footer-col .social-links a:hover 
+{
+    color: #ff7200;
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+.login-button {
+    background: #333;
+    color: red;
+    font-size: 2rem;
+    margin-left: 8rem;
+}
+
+.login-button:hover {
+    background: green;
+}
+
+.moody {
+    background-color: rgba(1, 19, 4, 0.4);
+}
+
+.moody:hover {
+    background-color: green;
+}
+.centered-text {
+    margin-top: 280px;
+    text-align: center;
+    font-size: 4em; /* Adjust the font size as needed */
+    color: rgba(255, 255, 255, 0.7); /* Adjust the transparency (alpha value) as needed */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    position: fixed; /* Position fixed to keep it at the top */
+    top: 0; /* Position at the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: moveLeftToRight 4s infinite alternate linear;
+    z-index: 999; /* Ensure it's above the video */
+  }
+  @keyframes moveLeftToRight {
+    0%, 100% {
+      left: 50%; /* Start and end position: center horizontally */
+    }
+    50% {
+      left: calc(50% + 20px); /* Move to the right by 20px from center */
+    }
+  }
+  
+
+  
